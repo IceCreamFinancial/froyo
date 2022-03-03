@@ -1,0 +1,10 @@
+[
+  {
+    "name": "spooky-chicken",
+    "token": "0x429D04D02eFB32b213D4D5b372DF733D0d533341",
+    "decimals": "1e18",
+    "poolId": 3,
+    "oracle": "tokens",
+    "oracleId": "CHICKEN"
+  }
+]

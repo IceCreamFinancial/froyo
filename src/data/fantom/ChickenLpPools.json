@@ -1,0 +1,40 @@
+[
+  {
+    "name": "spooky-ftm-chicken",
+    "address": "0xF3aBC7F971BfFFebc8d07D2F8dd98EfE1D8e77E1",
+    "decimals": "1e18",
+    "poolId": 0,
+    "chainId": 250,
+    "lp0": {
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0x429D04D02eFB32b213D4D5b372DF733D0d533341",
+      "oracle": "tokens",
+      "oracleId": "CHICKEN",
+      "decimals": "1e18"
+    }
+  },
+  {
+    "name": "spirit-ftm-egg",
+    "address": "0x86e4334d77948599e37C1ED90a1a373ce458634A",
+    "decimals": "1e18",
+    "chainId": 250,
+    "poolId": 1,
+    "lp0": {
+      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
+      "oracle": "tokens",
+      "oracleId": "WFTM",
+      "decimals": "1e18"
+    },
+    "lp1": {
+      "address": "0xef2BF0732637cC8FBCb97F84515D8cC6768AEcdc",
+      "oracle": "tokens",
+      "oracleId": "EGG",
+      "decimals": "1e18"
+    }
+  }
+]

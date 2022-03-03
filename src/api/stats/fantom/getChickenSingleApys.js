@@ -1,15 +1,15 @@
 const BigNumber = require('bignumber.js');
 const { fantomWeb3: web3 } = require('../../../utils/web3');
 
-const MasterChef = require('../../../abis/fantom/MagikRewardPool.json');
-const pools = require('../../../data/fantom/magikPools.json');
+const MasterChef = require('../../../abis/fantom/ChickenRewardPool.json');
+const pools = require('../../../data/fantom/chickenPools.json');
 const fetchPrice = require('../../../utils/fetchPrice');
 const { getTotalStakedInUsd } = require('../../../utils/getTotalStakedInUsd');
 const { compound } = require('../../../utils/compound');
 
-const masterchef = '0x38f006eb9c6778D02351FBd5966F829E7c4445D7';
+const masterchef = '0xE1249FBc686609Bfc9D1C0D2D58A1de7675c5FC3';
 const oracle = 'tokens';
-const oracleId = 'MSHARE';
+const oracleId = 'EGG';
 
 const DECIMALS = '1e18';
 const CHAIN_ID = 250;

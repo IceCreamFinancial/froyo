@@ -1160,22 +1160,46 @@ const _tokens = {
   MAGIK: {
     name: 'MAGIK Finance',
     symbol: 'MAGIK',
-    address: '0x87a5c9b60a3aaf1064006fe64285018e50e0d020',
+    address: '0x87a5C9B60A3aaf1064006FE64285018e50e0d020',
     chainId: 250,
     decimals: 18,
     logoURI: 'https://ftmscan.com/token/images/magik_32.png',
     website: 'https://magik.finance/',
-    description: 'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
+    description:
+      'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
   },
   MSHARE: {
     name: 'MSHARE',
     symbol: 'MSHARE',
-    address: '0x0C54bA36AdD9867e4f30e9ebbD86DD58EbbcFA64',
+    address: '0xC8Ca9026Ad0882133Ef126824F6852567c571A4E',
     chainId: 250,
     decimals: 18,
     logoURI: 'https://ftmscan.com/token/images/mshare_32.png',
     website: 'https://magik.finance/',
-    description: 'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
+    description:
+      'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
+  },
+  CHICKEN: {
+    name: 'CHICKEN',
+    symbol: 'CHICKEN',
+    address: '0x429D04D02eFB32b213D4D5b372DF733D0d533341',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://i.ibb.co/4f13rrz/chicken.png',
+    website: 'https://magik.finance/',
+    description:
+      'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
+  },
+  EGG: {
+    name: 'EGG',
+    symbol: 'EGG',
+    address: '0xef2BF0732637cC8FBCb97F84515D8cC6768AEcdc',
+    chainId: 250,
+    decimals: 18,
+    logoURI: 'https://i.ibb.co/4f13rrz/chicken.png',
+    website: 'https://magik.finance/',
+    description:
+      'Magik is real. Tomb Fork with steady growth pegged to FTM brought back from the dead by the community.',
   },
 } as const;
 

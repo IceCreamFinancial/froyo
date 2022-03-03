@@ -97,6 +97,7 @@ import tenfiPools from '../../data/tenfiLpPools.json';
 import burgerPools from '../../data/burgerLpPools.json';
 import tombPools from '../../data/fantom/tombLpPools.json';
 import magikPools from '../../data/fantom/magikLpPools.json';
+import chickenPools from '../../data/fantom/ChickenLpPools.json';
 import magikSinglePools from '../../data/fantom/magikPools.json';
 import spiritPools from '../../data/fantom/spiritPools.json';
 import wexPolyPools from '../../data/matic/wexPolyLpPools.json';
@@ -327,6 +328,7 @@ const pools = [
   ...wexPolyPools,
   ...tombPools,
   ...magikPools,
+  ...chickenPools,
   // ...magikSinglePools,
   ...burgerPools,
   ...waultPools,

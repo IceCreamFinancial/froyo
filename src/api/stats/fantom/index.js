@@ -6,7 +6,9 @@ const getFantomBifiGovApy = require('./getFantomBifiGovApy');
 const { getFantomBifiMaxiApy } = require('./getFantomBifiMaxiApy');
 const getTombApys = require('./getTombApys');
 const getMagikApys = require('./getMagikApys');
+const getChickenApys = require('./getChickenApys');
 const getMagikSingleApys = require('./getMagikSingleApys');
+const getChickenSingleApys = require('./getChickenSingleApys');
 const getSpiritApys = require('./getSpiritApys');
 const getCurveApys = require('./getCurveApys');
 const getScreamApys = require('./getScreamApys');
@@ -35,6 +37,8 @@ const getApys = [
   getTombApys,
   getMagikApys,
   getMagikSingleApys,
+  getChickenApys,
+  getChickenSingleApys,
   // getSushiLpApys,
   // getSpookyLpApys,
   // getFroyoLpApys,

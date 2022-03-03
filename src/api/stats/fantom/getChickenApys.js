@@ -1,17 +1,17 @@
 const { fantomWeb3: web3 } = require('../../../utils/web3');
 const BigNumber = require('bignumber.js');
 
-const RewardPool = require('../../../abis/fantom/MagikRewardPool.json');
-const pools = require('../../../data/fantom/magikLpPools.json');
+const RewardPool = require('../../../abis/fantom/ChickenRewardPool.json');
+const pools = require('../../../data/fantom/ChickenLpPools.json');
 const fetchPrice = require('../../../utils/fetchPrice');
 const { getTotalLpStakedInUsd } = require('../../../utils/getTotalStakedInUsd');
 const { getTradingFeeApr } = require('../../../utils/getTradingFeeApr');
-const { spiritClient } = require('../../../apollo/client');
-import { SPIRIT_LPF } from '../../../constants';
+const { spookyClient } = require('../../../apollo/client');
+import { SPOOKY_LPF } from '../../../constants';
 import getApyBreakdown from '../common/getApyBreakdown';
 
-const rewardPool = '0x38f006eb9c6778D02351FBd5966F829E7c4445D7';
-const oracleId = 'MSHARE';
+const rewardPool = '0xE1249FBc686609Bfc9D1C0D2D58A1de7675c5FC3';
+const oracleId = 'EGG';
 const oracle = 'tokens';
 const DECIMALS = '1e18';
 
@@ -23,9 +23,9 @@ const getChickenApys = async () => {
   const farmAprs = await Promise.all(promises);
 
   const pairAddresses = pools.map(pool => pool.address);
-  const tradingAprs = await getTradingFeeApr(spiritClient, pairAddresses, SPIRIT_LPF);
+  const tradingAprs = await getTradingFeeApr(spookyClient, pairAddresses, SPOOKY_LPF);
 
-  return getApyBreakdown(pools, tradingAprs, farmAprs, SPIRIT_LPF);
+  return getApyBreakdown(pools, tradingAprs, farmAprs, SPOOKY_LPF);
 };
 
 const getPoolApy = async (rewardPool, pool) => {
