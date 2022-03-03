@@ -1,6 +1,6 @@
 {
   "name": "magikfarm-addressbook",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A collection of useful addresses on various chains for defi development",
   "main": "build/address-book/index.js",
   "types": "build/address-book/index.d.ts",
