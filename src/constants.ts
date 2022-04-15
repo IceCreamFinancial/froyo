@@ -34,9 +34,9 @@ const BSC_RPC_ENDPOINTS = CUSTOM_BSC_RPC_ENDPOINTS.length
   ? CUSTOM_BSC_RPC_ENDPOINTS
   : MAINNET_BSC_RPC_ENDPOINTS;
 
-const BSC_RPC = process.env.BSC_RPC || BSC_RPC_ENDPOINTS[0];
+//const BSC_RPC = process.env.BSC_RPC || BSC_RPC_ENDPOINTS[0];
 // const HECO_RPC = process.env.HECO_RPC || 'https://http-mainnet.hecochain.com';
-// const AVAX_RPC = process.env.AVAX_RPC || 'https://api.avax.network/ext/bc/C/rpc';
+const AVAX_RPC = process.env.AVAX_RPC || 'https://api.avax.network/ext/bc/C/rpc';
 // const POLYGON_RPC = process.env.POLYGON_RPC || 'https://rpc-mainnet.maticvigil.com/';
 // const FANTOM_RPC = process.env.FANTOM_RPC || 'https://rpc.ftm.tools';
 // const ONE_RPC = process.env.ONE_RPC || 'https://api.s0.t.hmny.io/';
@@ -48,10 +48,10 @@ const BSC_RPC = process.env.BSC_RPC || BSC_RPC_ENDPOINTS[0];
 //   process.env.AURORA_RPC ||
 //   'https://mainnet.aurora.dev/Fon6fPMs5rCdJc4mxX4kiSK1vsKdzc3D8k6UF8aruek';
 
-const BSC_CHAIN_ID = ChainId.bsc;
+//const BSC_CHAIN_ID = ChainId.bsc;
 // const HECO_CHAIN_ID = ChainId.heco;
 // const POLYGON_CHAIN_ID = ChainId.polygon;
-// const AVAX_CHAIN_ID = ChainId.avax;
+const AVAX_CHAIN_ID = ChainId.avax;
 // const FANTOM_CHAIN_ID = ChainId.fantom;
 // const ONE_CHAIN_ID = ChainId.one;
 // const ARBITRUM_CHAIN_ID = ChainId.arbitrum;
@@ -73,10 +73,10 @@ const JOE_LPF = 0.0025;
 const SOLAR_LPF = 0.002;
 
 const MULTICHAIN_RPC: Record<ChainId, string> = {
-  [ChainId.bsc]: BSC_RPC,
+  // [ChainId.bsc]: BSC_RPC,
   // [ChainId.heco]: HECO_RPC,
   // [ChainId.polygon]: POLYGON_RPC,
-  // [ChainId.avax]: AVAX_RPC,
+  [ChainId.avax]: AVAX_RPC,
   // [ChainId.fantom]: FANTOM_RPC,
   // [ChainId.one]: ONE_RPC,
   // [ChainId.arbitrum]: ARBITRUM_RPC,
@@ -86,8 +86,10 @@ const MULTICHAIN_RPC: Record<ChainId, string> = {
   // [ChainId.aurora]: AURORA_RPC,
 };
 
-const BSC_VAULTS_ENDPOINT =
-  'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/bsc_pools.js';
+const AVAX_VAULTS_ENDPOINT =
+  'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/avalanche_pools.js';
+//const BSC_VAULTS_ENDPOINT =
+// 'https://raw.githubusercontent.com/bombmoney/farm-frontend/master/src/features/configure/vault/bsc_pools.js';
 // const HECO_VAULTS_ENDPOINT =
 //   'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/heco_pools.js';
 // const AVAX_VAULTS_ENDPOINT =
@@ -110,9 +112,9 @@ const BSC_VAULTS_ENDPOINT =
 //  'https://raw.githubusercontent.com/beefyfinance/beefy-app/prod/src/features/configure/vault/aurora_pools.js';
 
 const MULTICHAIN_ENDPOINTS = {
-  bsc: BSC_VAULTS_ENDPOINT,
+  //  bsc: BSC_VAULTS_ENDPOINT,
   // heco: HECO_VAULTS_ENDPOINT,
-  // avax: AVAX_VAULTS_ENDPOINT,
+  avax: AVAX_VAULTS_ENDPOINT,
   // polygon: POLYGON_VAULTS_ENDPOINT,
   // fantom: FANTOM_VAULTS_ENDPOINT,
   // one: ONE_VAULTS_ENDPOINT,
@@ -123,23 +125,23 @@ const MULTICHAIN_ENDPOINTS = {
   // aurora: AURORA_VAULTS_ENDPOINT,
 };
 
-const BEEFY_PERFORMANCE_FEE = 0.045;
+const BEEFY_PERFORMANCE_FEE = 0.06;
 const SHARE_AFTER_PERFORMANCE_FEE = 1 - BEEFY_PERFORMANCE_FEE;
 
 const EXCLUDED_IDS_FROM_TVL = ['venus-wbnb'];
 
 export {
   API_BASE_URL,
-  BSC_RPC,
-  BSC_RPC_ENDPOINTS,
-  BSC_CHAIN_ID,
-  BSC_VAULTS_ENDPOINT,
+  AVAX_RPC,
+  // AVAX_RPC_ENDPOINTS,
+  AVAX_CHAIN_ID,
+  AVAX_VAULTS_ENDPOINT,
   // HECO_RPC,
   // HECO_CHAIN_ID,
   //HECO_VAULTS_ENDPOINT,
-  // AVAX_RPC,
-  // AVAX_CHAIN_ID,
-  //  AVAX_VAULTS_ENDPOINT,
+  /*   AVAX_RPC,
+  AVAX_CHAIN_ID,
+  AVAX_VAULTS_ENDPOINT, */
   // POLYGON_RPC,
   // POLYGON_CHAIN_ID,
   //  POLYGON_VAULTS_ENDPOINT,

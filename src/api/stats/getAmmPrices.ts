@@ -10,7 +10,8 @@ import getNonAmmPrices from './getNonAmmPrices';
 // import blizzardLpPools from '../../data/degens/blizzardLpPools.json';
 // import alpacaLpPools from '../../data/alpacaLpPools.json';
 // import cafePools from '../../data/cafeLpPools.json';
-
+import sundaeLpPools from '../../data/avax/sundaeLpPools.json';
+import icecreamLpPools from '../../data/avax/icecreamLpPools.json';
 // import kebabPools from '../../data/kebabLpPools.json';
 // import bdollarSbdoPools from '../../data/bdollarSbdoLpPools.json';
 // import boltBtdPools from '../../data/boltBtdLpPools.json';
@@ -195,6 +196,8 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
   // ...solarbeamDualLpV2Pools,
+  ...icecreamLpPools,
+  ...sundaeLpPools,
   ...bombLpPools,
   // ...charmPools,
   // ...chargePools,

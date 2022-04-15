@@ -19,6 +19,8 @@ const getBankerJoeApys = require('./getBankerJoeApys');
 import { getSynapseApys } from './getSynapseApys';
 const getSpellApys = require('./getSpellApys');
 import { getMaiApys } from './getMaiApys';
+const getSundaeApys = require('./getSundaeApys');
+const getIceCreamApys = require('./getIceCreamApys');
 
 const getApys = [
   getComAvaxApys,
@@ -42,6 +44,8 @@ const getApys = [
   getSynapseApys,
   getSpellApys,
   getMaiApys,
+  getIceCreamApys,
+  getSundaeApys,
 ];
 
 const getAvaxApys = async () => {

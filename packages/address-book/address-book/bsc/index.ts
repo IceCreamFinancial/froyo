@@ -6,7 +6,6 @@ import { ironfinance } from './platforms/ironfinance';
 import { farmhero } from './platforms/farmhero';
 import { ellipsis } from './platforms/ellipsis';
 import { elk } from './platforms/elk';
-import { bombfarm } from './platforms/bombfarm';
 import { wault } from './platforms/wault';
 import { kebab } from './platforms/kebab';
 import { jet } from './platforms/jet';
@@ -20,7 +19,6 @@ const _bsc = {
   platforms: {
     ape,
     bakery,
-    bombfarm,
     beefyfinance,
     pancake,
     ironfinance,

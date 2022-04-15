@@ -7,6 +7,8 @@ import { pangolin } from './platforms/pangolin';
 import { joe } from './platforms/joe';
 import { synapse } from './platforms/synapse';
 import { mai } from './platforms/mai';
+import { sundae } from './platforms/sundae';
+import { icecream } from './platforms/icecream';
 
 import { tokens } from './tokens/tokens';
 import { convertSymbolTokenMapToAddressTokenMap } from '../../util/convertSymbolTokenMapToAddressTokenMap';
@@ -19,6 +21,8 @@ const _avax = {
     joe,
     synapse,
     mai,
+    sundae,
+    icecream,
   },
   tokens,
   tokenAddressMap: convertSymbolTokenMapToAddressTokenMap(tokens),

@@ -1,7 +1,7 @@
 {
-  "name": "bombfarm-api",
+  "name": "froyo-api",
   "version": "1.0.1",
-  "repository": "bombmoney/bombfarm-api",
+  "repository": "icecreamfinancial/froyo-api",
   "license": "MIT",
   "scripts": {
     "install-all": "yarn && cd packages/address-book && yarn",

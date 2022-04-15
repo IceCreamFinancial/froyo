@@ -15,6 +15,407 @@ const AVAX = {
 } as const;
 
 const _tokens = {
+  CREAM: {
+    chainId: 43114,
+    address: '0xAE21d31a6494829a9E4B2B291F4984AAE8121757',
+    decimals: 18,
+    name: 'CREAM Token',
+    symbol: 'CREAM',
+    website: 'https://icecreamfinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 AVAX via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/CREAM.png',
+  },
+  CSHARE: {
+    chainId: 43114,
+    address: '0x155f794b56353533E0AfBF76e1B1FC57DFAd5Bd7',
+    decimals: 18,
+    name: 'CSHARE Token',
+    symbol: 'CSHARE',
+    website: 'https://icecreamfinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 AVAX via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/CSHARE.png',
+  },
+  FUDGE: {
+    chainId: 43114,
+    address: '0xD9FF12172803c072a36785DeFea1Aa981A6A0C18',
+    decimals: 18,
+    name: 'FUDGE Token',
+    symbol: 'FUDGE',
+    website: 'https://www.sundaefinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 DAI via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/FUDGE.png',
+  },
+  STRAW: {
+    chainId: 43114,
+    address: '0xf8D0C6c3ddC03F43A0687847f2b34bfd6941C2A2',
+    decimals: 18,
+    name: 'STRAW Token',
+    symbol: 'STRAW',
+    website: 'https://www.sundaefinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 DAI via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/STRAW.png',
+  },
+  ARGOS: {
+    chainId: 43114,
+    address: '0x8F4b642440381833D4daea9aC7b0B8C9aBC9a600',
+    decimals: 18,
+    name: 'ARGOS Token',
+    symbol: 'ARGOS',
+    website: 'https://argos.financial/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of JOE via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/ARGOS.png',
+  },
+  ASHARE: {
+    chainId: 43114,
+    address: '0xe9067be19c824d7ad82e35333152EB0c593AB454',
+    decimals: 18,
+    name: 'ASHARE Token',
+    symbol: 'ASHARE',
+    website: 'https://argos.financial/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of JOE via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/ASHARE.png',
+  },
+
+  STG: {
+    name: 'Stargate',
+    symbol: 'STG',
+    address: '0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x2F6F07CDcf3588944Bf4C42aC74ff24bF56e7590/logo.png',
+    website: 'https://stargate.finance/',
+    description:
+      'Stargate is a community-driven organization building the first fully composable native asset bridge, and the first dApp built on LayerZero.',
+  },
+  FLY: {
+    name: 'Hoppers Game FLY',
+    symbol: 'FLY',
+    address: '0x78Ea3fef1c1f07348199Bf44f45b803b9B0Dbe28',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x78Ea3fef1c1f07348199Bf44f45b803b9B0Dbe28/logo.png',
+    website: 'https://hoppersgame.io/',
+    description:
+      'Hoppers Game is an idle game where players stake their Hopper NFTs in different adventures to earn $FLY.',
+  },
+  APE: {
+    name: 'ApeCoin APE',
+    symbol: 'APE',
+    address: '0x0802d66f029c46E042b74d543fC43B6705ccb4ba',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x0802d66f029c46E042b74d543fC43B6705ccb4ba/logo.png',
+    website: 'https://apecoin.com/',
+    description:
+      'ApeCoin is the APE Ecosystems governance token, allowing token holders to participate in ApeCoin DAO and giving its participants a shared and open currency that can be used without centralized intermediaries.',
+  },
+  DEG: {
+    name: 'DegisToken',
+    symbol: 'DEG',
+    address: '0x9f285507Ea5B4F33822CA7aBb5EC8953ce37A645',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: 'https://s2.coinmarketcap.com/static/img/coins/64x64/18840.png',
+    website: 'https://degis.io/',
+    description:
+      'Blockchain is miserable, where risk and reward are widely extended. DEGIS is the shield to protect you. With innovative protection products, DEGIS is attractive to both on-chain and off-chain buyers.',
+  },
+  EGG: {
+    name: 'Chikn Egg',
+    symbol: 'EGG',
+    address: '0x7761E2338B35bCEB6BdA6ce477EF012bde7aE611',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: 'https://assets.coingecko.com/coins/images/21811/large/EggToken_200_Transparent.png',
+    website: 'https://chikn.farm/',
+    description: 'Chikn is an ecosystem based around NFTs that lay EGGs.',
+  },
+  FEED: {
+    name: 'Chikn Feed',
+    symbol: 'FEED',
+    address: '0xab592d197ACc575D16C3346f4EB70C703F308D1E',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: 'https://assets.coingecko.com/coins/images/22417/large/bJIvBemg_400x400.jpg',
+    website: 'https://chikn.farm/',
+    description: 'Chikn is an ecosystem based around NFTs that lay EGGs.',
+  },
+  ECD: {
+    name: 'Echidna ECD',
+    symbol: 'ECD',
+    address: '0xeb8343D5284CaEc921F035207ca94DB6BAaaCBcd',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xeb8343d5284caec921f035207ca94db6baaacbcd/logo.png',
+    website: 'https://www.echidna.finance/',
+    description:
+      'Echidna Finance is the ultimate yield boosting protocol for Platypus Finance, Avalanches native stableswap.',
+  },
+  VTX: {
+    name: 'Vector',
+    symbol: 'VTX',
+    address: '0x5817D4F0b62A59b17f75207DA1848C2cE75e7AF4',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x5817D4F0b62A59b17f75207DA1848C2cE75e7AF4/logo.png',
+    website: 'https://vectorfinance.io/',
+    description:
+      'Vector allows users to deposit stablecoins and earn boosted yield from the Platypus platform, without having to stake their PTP and worry about accruing vePTP.',
+  },
+  PAE: {
+    name: 'Ripae',
+    symbol: 'PAE',
+    address: '0x9466Ab927611725B9AF76b9F31B2F879Ff14233d',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://ripae.finance/',
+    description:
+      'Ripae Finances full focus is to build a true cross-chain algorithmic stable coin protocol that is stabilized with true use-cases all around the DeFi Ecosystem.',
+    logoURI: 'https://avax.ripae.finance/static/media/ripae_pftm.3832b2f1.svg',
+  },
+  pAVAX: {
+    name: 'pAVAX',
+    symbol: 'pAVAX',
+    address: '0x6ca558bd3eaB53DA1B25aB97916dd14bf6CFEe4E',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://ripae.finance/',
+    description:
+      'Ripae Finances full focus is to build a true cross-chain algorithmic stable coin protocol that is stabilized with true use-cases all around the DeFi Ecosystem.',
+    logoURI: 'https://avax.ripae.finance/static/media/ripae_pae.e914457b.svg',
+  },
+  FIEF: {
+    name: 'Fief FIEF',
+    symbol: 'FIEF',
+    address: '0x65Def5029A0e7591e46B38742bFEdd1Fb7b24436',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xeA068Fba19CE95f12d252aD8Cb2939225C4Ea02D/logo.png',
+    website: 'https://fief.finance/',
+    description:
+      'Fief is the economic guild of the metaverse with the primary objectives to acquire key assets from across the metaverse and drive the value of those assets through the combination of a highly-gamified guild faction system and decentralized protocols.',
+  },
+  BRIBE: {
+    name: 'Police & Thief Game BRIBE',
+    symbol: 'BRIBE',
+    address: '0xCe2fbed816E320258161CeD52c2d0CEBcdFd8136',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0xCe2fbed816E320258161CeD52c2d0CEBcdFd8136/logo.png',
+    website: 'https://policeandthief.game/',
+    description:
+      'BRIBE represents the latest token rollout in the Tri-Token Tokenomics of the police & thief game.',
+  },
+  TUS: {
+    name: 'Treasure Under Sea TUS',
+    symbol: 'TUS',
+    address: '0xf693248F96Fe03422FEa95aC0aFbBBc4a8FdD172',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0xf693248F96Fe03422FEa95aC0aFbBBc4a8FdD172/logo.png',
+    website: 'https://crabada.com',
+    description:
+      'TUS is the in-game currency earned via playing the game in the form of Mining, Looting and Lending Crabada via the Tavern.',
+  },
+  ACRE: {
+    name: 'Arable Protocol ACRE',
+    symbol: 'ACRE',
+    address: '0x00EE200Df31b869a321B10400Da10b561F3ee60d',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0x00EE200Df31b869a321B10400Da10b561F3ee60d/logo.png',
+    website: 'https://www.arablefi.com/',
+    description:
+      'Arable is a synthetic yield farming protocol that is dedicated to helping yield farmers access multiple blockchains (such as Ethereum, Avalanche, Solana, or Polygon) assets and yields on a single chain.',
+  },
+  FIRE: {
+    name: 'The Phoenix FIRE',
+    symbol: 'FIRE',
+    address: '0xfcc6CE74f4cd7eDEF0C5429bB99d38A3608043a5',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0xfcc6CE74f4cd7eDEF0C5429bB99d38A3608043a5/logo.png',
+    website: 'https://thephoenix.finance/',
+    description:
+      'Phoenix Community Capital is a community investment project focused on using a shared asset pool to perform on-chain and off-chain investments into yield bearing instruments.',
+  },
+  sAVAX: {
+    name: 'Staked Avax',
+    symbol: 'sAVAX',
+    address: '0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x2b2C81e08f1Af8835a78Bb2A90AE924ACE0eA4bE/logo.png',
+    website: 'https://benqi.fi/',
+    description:
+      'BENQI Liquid Staking is a protocol enabling users to stake AVAX to receive sAVAX, an interest bearing version of AVAX',
+  },
+  LUNA: {
+    name: 'Axelar Wrapped LUNA',
+    symbol: 'LUNA',
+    address: '0x120AD3e5A7c796349e591F1570D9f7980F4eA9cb',
+    chainId: 43114,
+    decimals: 6,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0x120AD3e5A7c796349e591F1570D9f7980F4eA9cb/logo.png',
+    website: 'https://www.terra.money/',
+    description:
+      'The Terra protocols native staking token that absorbs the price volatility of Terra. Luna is used for governance and in mining. Users stake Luna to validators who record and verify transactions on the blockchain in exchange for rewards from transaction fees. The more Terra is used, the more Luna is worth.',
+  },
+  DOMI: {
+    name: 'DOMI Online DOMI',
+    symbol: 'DOMI',
+    address: '0xFc6Da929c031162841370af240dEc19099861d3B',
+    chainId: 43114,
+    decimals: 6,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xFc6Da929c031162841370af240dEc19099861d3B/logo.png',
+    website: 'https://domionline.io/',
+    description: 'Domi Online is a play to earn 3D Blockchain MMORPG underpinned by NFTs.',
+  },
+  LOOT: {
+    name: 'Police and Thief Game LOOT',
+    symbol: 'LOOT',
+    address: '0x7f041ce89A2079873693207653b24C15B5e6A293',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0x7f041ce89A2079873693207653b24C15B5e6A293/logo.png',
+    website: 'https://policeandthief.game/',
+    description:
+      'Police and Thief Game is a NFT P2E game on Avalanche, a Wolf Game derivative. The game incorporates probability based derivatives and decision making possibilities to allow players to make various decisions to come out on top.',
+  },
+  WINE: {
+    name: 'WINE',
+    symbol: 'WINE',
+    address: '0xC55036B5348CfB45a932481744645985010d3A44',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: 'https://assets.coingecko.com/coins/images/22739/small/gshare.png',
+    website: 'https://grapefinance.app/',
+    description: 'GRAPE is an algorithmic stable coin designed to maintain a 1:1 peg to MIM.',
+  },
+  GRAPE: {
+    name: 'GRAPE',
+    symbol: 'GRAPE',
+    address: '0x5541D83EFaD1f281571B343977648B75d95cdAC2',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: 'https://assets.coingecko.com/coins/images/22718/small/grape.png',
+    website: 'https://grapefinance.app/',
+    description: 'GRAPE is an algorithmic stable coin designed to maintain a 1:1 peg to MIM.',
+  },
+  DCAU: {
+    name: 'Dragon Crypto Aurum DCAU',
+    symbol: 'DCAU',
+    address: '0x100Cc3a819Dd3e8573fD2E46D1E66ee866068f30',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x100Cc3a819Dd3e8573fD2E46D1E66ee866068f30/logo.png',
+    website: 'https://aurum.dragoncrypto.io/',
+    description:
+      'Dragon Crypto Gaming (DCG), a Game-Fi platform which offers NFTs, play-to-earn games and yield farming.',
+  },
+  HEC: {
+    name: 'HeroesChained HEC',
+    symbol: 'HEC',
+    address: '0xC7f4debC8072e23fe9259A5C0398326d8EfB7f5c',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xC7f4debC8072e23fe9259A5C0398326d8EfB7f5c/logo.png',
+    website: 'https://heroeschained.com/',
+    description:
+      'Heroes Chained is a fantasy action RPG game, where the player becomes a Guild Master and gathers heroes.',
+  },
+  COOK: {
+    name: 'Cook COOK',
+    symbol: 'COOK',
+    address: '0x637afeff75ca669fF92e4570B14D6399A658902f',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0x637afeff75ca669fF92e4570B14D6399A658902f/logo.png',
+    website: 'https://app.cook.finance/',
+    description:
+      'Cook Protocol establishes a transparent and flexible asset management platform suited to diverse investors and asset management service providers alike.',
+  },
+  UST: {
+    name: 'Axelar Wrapped UST',
+    symbol: 'UST',
+    address: '0x260Bbf5698121EB85e7a74f2E45E16Ce762EbE11',
+    chainId: 43114,
+    decimals: 6,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x260Bbf5698121EB85e7a74f2E45E16Ce762EbE11.svg',
+    website: 'https://www.terra.money/',
+    description:
+      'Terra stablecoins offer instant settlements, low fees and seamless cross-border exchange - loved by millions of users and merchants.',
+  },
+  MORE: {
+    name: 'More Token',
+    symbol: 'MORE',
+    address: '0xd9D90f882CDdD6063959A9d837B05Cb748718A05',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0xd9D90f882CDdD6063959A9d837B05Cb748718A05.svg',
+    website: 'https://app.moremoney.finance/',
+    description:
+      'Moremoney is a lending protocol for opening interest-free collateralised debt positions (CDP) using liquidity pool tokens, interest-bearing tokens (ibTKNs) and other major tokens as collateral. Borrowers mint MONEY, a USD softly pegged stablecoin backed by an over-collateralised debt position as well as the yield earned by the collateral.  After minting MONEY, borrowers can use it across the DeFi landscape, for interest free leverage, or simply use it to farm MORE. Moremoney is designed to support the further conversion of base tokens like ETH, AVAX, USDT into ibTKNs. Upon depositing, collateral assets are forwarded to trusted partner protocols where these tokens earn yield, which is either compounded into collateral token or into $MONEY to automatically repay debts owed by a vault.',
+  },
+  GMX: {
+    name: 'GMX',
+    symbol: 'GMX',
+    address: '0x62edc0692BD897D2295872a9FFCac5425011c661',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x62edc0692BD897D2295872a9FFCac5425011c661.svg',
+    website: 'https://gmx.io/buy',
+    description: 'Swaps and leverage trading of up to 30x is now live on Avalanche!',
+  },
+  FRM: {
+    name: 'Ferrum Network Token',
+    symbol: 'FRM',
+    address: '0xE5CAeF4Af8780E59Df925470b050Fb23C43CA68C',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0xE5CAeF4Af8780E59Df925470b050Fb23C43CA68C.svg',
+    website: 'https://ferrum.network/',
+    description:
+      'Ferrum Network is a cross-chain Blockchain as a Service DeFi company that specializes in adding deflationary token utility and advisory services to projects across the crypto space. With the mission of breaking down barriers to mass adoption in mind, Ferrum builds white-label blockchain solutions that empower startups and established organizations, enabling them to get their core products to market faster.Become Cross-Chain Compatible Today',
+  },
+  JEWEL: {
+    chainId: 43114,
+    address: '0x4f60a160D8C2DDdaAfe16FCC57566dB84D674BD6',
+    decimals: 18,
+    name: 'DeFi Kingdoms',
+    symbol: 'JEWEL',
+    website: 'https://defikingdoms.com/',
+    description:
+      'JEWEL is the governance token that powers DeFi Kingdoms which can be used to purchase NFTs such as items, heroes, and kingdoms. Holders can also stake them into liquidity mining pools to earn a yield from the protocol.',
+    logoURI: 'https://assets.coingecko.com/coins/images/18570/large/fAisLIV.png?1632449282',
+  },
   gOHM: {
     chainId: 43114,
     address: '0x321E7092a180BB43555132ec53AaA65a5bF84251',
@@ -23,8 +424,9 @@ const _tokens = {
     symbol: 'gOHM',
     website: 'https://www.olympusdao.finance/',
     description:
-      "Olympus is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world.",
-    logoURI: 'https://assets.coingecko.com/coins/images/14483/large/token_OHM_%281%29.png?1628311611',
+      'Olympus is building a community-owned decentralized financial infrastructure to bring more stability and transparency for the world.',
+    logoURI:
+      'https://assets.coingecko.com/coins/images/14483/large/token_OHM_%281%29.png?1628311611',
   },
   QI: {
     chainId: 43114,
@@ -34,7 +436,7 @@ const _tokens = {
     symbol: 'QI',
     website: 'https://www.mai.finance/',
     description:
-      "Qi (pronounced CHEE) is the governance token of the QiDao Protocol. It allows those who hold it to vote on changes to the QiDao Protocol.",
+      'Qi (pronounced CHEE) is the governance token of the QiDao Protocol. It allows those who hold it to vote on changes to the QiDao Protocol.',
     logoURI: 'https://raw.githubusercontent.com/0xlaozi/qidao/main/images/qi.png',
   },
   BOO: {
@@ -811,6 +1213,15 @@ const _tokens = {
     logoURI:
       'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xDF9A6628235C90da0a475519D85C9CFFa2a11D4C/logo.png',
   },
+  NCASH: {
+    chainId: 43114,
+    address: '0xc69Eba65e87889f0805dB717Af06797055A0BA07',
+    decimals: 18,
+    name: 'NCash is the native cryptocurrency and protocol token of the Nitro Network. Nitro Network is building a world of private communication networks powered by IoT together with LoRaWAN/3G/4G and 5G.',
+    symbol: 'NCASH',
+    logoURI:
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0xc69Eba65e87889f0805dB717Af06797055A0BA07/logo_48.png',
+  },
   COT: {
     chainId: 43114,
     address: '0xa8cE5107A2770959edB27529E56E84e11eF55a58',
@@ -837,15 +1248,6 @@ const _tokens = {
     symbol: 'COVER',
     logoURI:
       'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xe35f68f3DE8590F3FD6884Eef166AF9f414D75F7/logo.png',
-  },
-  CREAM: {
-    chainId: 43114,
-    address: '0xb9AB39F9b4E3af0c97aE55EA48A960656C681A88',
-    decimals: 18,
-    name: 'Cream',
-    symbol: 'CREAM',
-    logoURI:
-      'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xb9AB39F9b4E3af0c97aE55EA48A960656C681A88/logo.png',
   },
   cyUSD: {
     chainId: 43114,
@@ -1365,14 +1767,14 @@ const _tokens = {
   },
   FRAX: {
     chainId: 43114,
-    address: '0xBB69c92FBb4F1aFf528875056650c862F94D3CC1',
+    address: '0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64',
     decimals: 18,
     name: 'Frax',
     symbol: 'FRAX',
     website: 'https://frax.finance/',
     description: 'Frax is the first fractional-algorithmic stablecoin protocol.',
     logoURI:
-      'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xBB69c92FBb4F1aFf528875056650c862F94D3CC1/logo.png',
+      'https://raw.githubusercontent.com/pangolindex/tokens/main/assets/0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64/logo.png',
   },
   FXS: {
     chainId: 43114,
@@ -1382,6 +1784,15 @@ const _tokens = {
     symbol: 'FXS',
     logoURI:
       'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xb1BA5Cf8EAa4D3c3439e91c190553E9c92e98E30/logo.png',
+  },
+  IME: {
+    chainId: 43114,
+    address: '0xF891214fdcF9cDaa5fdC42369eE4F27F226AdaD6',
+    decimals: 18,
+    name: ' Imperium Empires Token',
+    symbol: 'IME',
+    logoURI:
+      'https://raw.githubusercontent.com/traderjoe-xyz/joe-tokenlists/main/logos/0xF891214fdcF9cDaa5fdC42369eE4F27F226AdaD6/logo.png',
   },
   FRONT: {
     chainId: 43114,
@@ -3896,7 +4307,7 @@ const _tokens = {
       'https://pancakeswap.finance/images/tokens/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png',
   },
   MIM: {
-    name: 'albracabra',
+    name: 'Magic Internet Money',
     address: '0x130966628846BFd36ff31a822705796e8cb8C18D',
     symbol: 'MIM',
     decimals: 18,
@@ -3928,6 +4339,121 @@ const _tokens = {
     website: 'https://www.crabada.com/',
     description:
       'Rediscover the prosperous ancient Crabada Kingdom once ruled by Crustaco, King of the Crabada. Mine. Loot. Breed. Expand your forces. Earn CRA tokens by playing and use them to determine the future of the Kingdom!',
+  },
+  aWOOL: {
+    name: 'AWOOL',
+    symbol: 'aWOOL',
+    address: '0x5eDE350E84223fb50775fD91a723F2ca71034cf7',
+    chainId: 43114,
+    decimals: 9,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x5eDE350E84223fb50775fD91a723F2ca71034cf7.svg',
+    website: 'https://www.sheepgamexyz.com/',
+    description:
+      'Wolf.Game pioneered new types of NFT mechanics BUT SheepGame brings it to Avalanche! Fully decentralized. Low Fees and Sub Second Finality and fully functional! SheepGame shows what’s possible with interactions between the ERC-20 and ERC-721 protocols on Avalanche. For the very first time, your NFT can steal other NFTs (ERC-721) for you. The rarer your NFT, the more tokens youll accumulate probabilistically!',
+  },
+  MEAD: {
+    name: 'THORS MEAD',
+    symbol: 'MEAD',
+    address: '0x245C2591403e182e41d7A851eab53B01854844CE',
+    chainId: 43114,
+    decimals: 8,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x245C2591403e182e41d7A851eab53B01854844CE.svg',
+    website: 'https://asgarddao.fi/',
+    description:
+      'Asgard also introduces economic and game-theoretic dynamics into the market through forging (Staking) and pledging (Minting). Our goal is to build a policy-controlled currency system, native on the Avalanche Network, that is based on the VOLT token! ',
+  },
+  KLO: {
+    name: 'Kalao Token',
+    symbol: 'KLO',
+    address: '0xb27c8941a7Df8958A1778c0259f76D1F8B711C35',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0xb27c8941a7Df8958A1778c0259f76D1F8B711C35.svg',
+    website: 'https://www.kalao.io/',
+    description:
+      'Kalao is an NFT ecosystem. We offer a cost-effective and easy-to-use Marketplace, powered by a combination of the Avalanche blockchain technology and outstanding Kalao VR capabilities. The Kalao framework will accelerate the adoption of VR technology to develop virtual worlds and sustain the digital transformation of business use cases.',
+  },
+  CRAFT: {
+    name: 'CRAFT',
+    symbol: 'CRAFT',
+    address: '0x8aE8be25C23833e0A01Aa200403e826F611f9CD2',
+    chainId: 43114,
+    decimals: 18,
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x8aE8be25C23833e0A01Aa200403e826F611f9CD2.svg',
+    website: 'https://talecraft.io/',
+    description:
+      'TaleCraft is a PVP, play-to-earn card board game, driven by a unique mint and craft mechanic, where players grow more powerful through gamified NFT alchemy. Elemental base cards are sold weekly, allowing only the most skilled alchemists to thrive and progress in this medieval metaverse. All NFT holders will receive AVAX yield generated by the game ecosystem, rewarding the most loyal and skilled holders. NFT & Token Deflation System TaleCraft leverages a brand new type of NFT minting process that balances game design and scarcity, designed to produce a sustainable, long-term economy. Crafting Technology achieves this, in part, by burning base cards to craft higher-tier cards, combing scarcity with game theory. Additionally, when chests are opened with $CRAFT, they are both burnt and used for vital liquidity--bolstering the entire game economy. The NFT’s total supply will be determined and balanced by community demand driven by free market principles.',
+  },
+  MELT: {
+    name: 'Defrost Finance Token',
+    symbol: 'MELT',
+    address: '0x47EB6F7525C1aA999FBC9ee92715F5231eB1241D',
+    chainId: 43114,
+    decimals: 18,
+    logoURI: '',
+    website: 'https://www.defrost.finance/home',
+    description:
+      'Defrost Finance is the platform behind the next generation stablecoin and provides remunerative investment opportunities. A fully fair launch, decentralized project, its aim is to change the world of finance for good.',
+  },
+  PTP: {
+    chainId: 43114,
+    address: '0x22d4002028f537599bE9f666d1c4Fa138522f9c8',
+    decimals: 18,
+    name: 'Platypus',
+    symbol: 'PTP',
+    website: 'https://platypus.finance/',
+    description:
+      'Platypus invents a whole new AMM on Avalanche - Open liquidity single-sided AMM managing risk autonomously based on the coverage ratio, allowing maximal capital efficiency.',
+    logoURI: 'https://img.api.cryptorank.io/coins/platypus%20finance1639051361866.png',
+  },
+  CLY: {
+    chainId: 43114,
+    address: '0xec3492a2508DDf4FDc0cD76F31f340b30d1793e6',
+    decimals: 18,
+    name: 'Colony Token',
+    symbol: 'CLY',
+    website: 'https://www.colonylab.io/',
+    description:
+      'Colony is a community-driven Avalanche ecosystem accelerator, powered by Colony’s CLY token.',
+    logoURI: 'https://assets.coingecko.com/coins/images/21358/large/colony.PNG?1639013005',
+  },
+  USDC: {
+    chainId: 43114,
+    address: '0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E',
+    decimals: 6,
+    name: 'USD Coin',
+    symbol: 'USDC',
+    website: 'https://www.circle.com/usdc',
+    description:
+      'USDC is a fully collateralized US dollar stablecoin. USDC is issued by regulated financial institutions, backed by fully reserved assets, redeemable on a 1:1 basis for US dollars.',
+    logoURI:
+      'https://pancakeswap.finance/images/tokens/0x8ac76a51cc950d9822d68b83fe1ad97b32cd580d.png',
+  },
+  ROCO: {
+    chainId: 43114,
+    address: '0xb2a85C5ECea99187A977aC34303b80AcbDdFa208',
+    decimals: 18,
+    name: 'Roco Finance',
+    symbol: 'ROCO',
+    website: 'https://roco.finance/',
+    description:
+      'ROCO is a decentralized GAMEFI platform which provide blockchain services to game developers, content creators and player communities through the blockchain network.',
+    logoURI: 'https://assets.coingecko.com/coins/images/19234/large/86109466.png?1634769540',
+  },
+  HON: {
+    chainId: 43114,
+    address: '0xEd2b42D3C9c6E97e11755BB37df29B6375ede3EB',
+    decimals: 18,
+    name: 'Heroes of NFT',
+    symbol: 'HON',
+    website: 'https://heroesofnft.com/',
+    description:
+      'Heroes of NFT is an online card game where you can attend tournaments and defeat your opponents to rise to victory.',
+    logoURI: 'https://assets.coingecko.com/coins/images/23527/small/tokenlogo200.png?1644368289',
   },
 } as const;
 
