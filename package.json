@@ -1,7 +1,7 @@
 {
-  "name": "froyo-api",
+  "name": "froyo",
   "version": "1.0.1",
-  "repository": "icecreamfinancial/froyo-api",
+  "repository": "icecreamfinancial/froyo",
   "license": "MIT",
   "scripts": {
     "install-all": "yarn && cd packages/address-book && yarn",
