@@ -1,5 +1,5 @@
 {
-  "name": "froyo-addressbook",
+  "name": "froyo2-addressbook",
   "version": "0.5.11",
   "description": "A collection of useful addresses on various chains for defi development",
   "main": "build/address-book/index.js",
