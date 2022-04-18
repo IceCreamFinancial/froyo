@@ -2665,6 +2665,11 @@ fromentries@^1.2.0:
   resolved "https://registry.npmjs.org/fromentries/-/fromentries-1.3.2.tgz"
   integrity sha512-cHEpEQHUg0f8XdtZCc2ZAhrHzKzT0MrFUTcvx+hfxYu7rGMDc5SKoXFh+n4YigxsHXRzc6OrCshdR1bWH6HHyg==
 
+froyop-addressbook@^1.0.1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/froyop-addressbook/-/froyop-addressbook-1.0.4.tgz#dc5ba6179d1174591c8c9ee2054b52554262154b"
+  integrity sha512-iZlfQI7V0/34hdqD4LPq/zBwR15sDytqaFS4U0O3Lq+BSJMVnCY6bNuMy87xEShMwS4q1iDtvWBaaVEw13eKKA==
+
 fs-extra@^4.0.2:
   version "4.0.3"
   resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-4.0.3.tgz"
@@ -3863,11 +3868,6 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
-
-magikfarm-addressbook@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/magikfarm-addressbook/-/magikfarm-addressbook-1.0.1.tgz"
-  integrity sha512-W/sTcG6BGZ8KlKYrc9nV5JLIS7wTz9ZaNWVoYEBl22oMYknQnxIvB2cnLu7mplyI1xex4k/J+d5nQXtPhr1JVA==
 
 make-dir@^3.0.0, make-dir@^3.0.2:
   version "3.1.0"
