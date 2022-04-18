@@ -32,7 +32,7 @@ const updateApys = async () => {
   try {
     const results = await Promise.allSettled([
       // getMaticApys(),
-      // getAvaxApys(),
+      getAvaxApys(),
       getFantomApys(),
       // getHecoApys(),
       // getBSCApys(),

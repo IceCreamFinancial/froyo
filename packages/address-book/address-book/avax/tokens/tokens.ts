@@ -15,6 +15,51 @@ const AVAX = {
 } as const;
 
 const _tokens = {
+  CREAM: {
+    name: 'CREAM',
+    symbol: 'CREAM',
+    address: '0xAE21d31a6494829a9E4B2B291F4984AAE8121757',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://icecreamfinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 AVAX via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/CREAM.png',
+  },
+  CSHARE: {
+    name: 'CSHARE',
+    symbol: 'CSHARE',
+    address: '0x155f794b56353533E0AfBF76e1B1FC57DFAd5Bd7',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://icecreamfinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 AVAX via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/CSHARE.png',
+  },
+  FUDGE: {
+    name: 'FUDGE',
+    symbol: 'FUDGE',
+    address: '0xD9FF12172803c072a36785DeFea1Aa981A6A0C18',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://www.sundaefinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 DAI via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/FUDGE.png',
+  },
+  STRAW: {
+    name: 'STRAW',
+    symbol: 'STRAW',
+    address: '0xf8D0C6c3ddC03F43A0687847f2b34bfd6941C2A2',
+    chainId: 43114,
+    decimals: 18,
+    website: 'https://www.sundaefinance.app/#/',
+    description:
+      'Algo stablecoin on Avalanche C Chain, pegged to the price of 1 DAI via seigniorage.',
+    logoURI: 'https://raw.githubusercontent.com/IceCreamFinancial/froyoassets/main/STRAW.png',
+  },
+
   LUNA: {
     name: 'Axelar Wrapped LUNA',
     symbol: 'LUNA',
@@ -988,15 +1033,7 @@ const _tokens = {
     logoURI:
       'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xe35f68f3DE8590F3FD6884Eef166AF9f414D75F7/logo.png',
   },
-  CREAM: {
-    chainId: 43114,
-    address: '0xb9AB39F9b4E3af0c97aE55EA48A960656C681A88',
-    decimals: 18,
-    name: 'Cream',
-    symbol: 'CREAM',
-    logoURI:
-      'https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xb9AB39F9b4E3af0c97aE55EA48A960656C681A88/logo.png',
-  },
+
   cyUSD: {
     chainId: 43114,
     address: '0x3a9ea8880643211413609A7B717e3884816D15e7',

@@ -16,13 +16,18 @@ const getPangolinV2DualApys = require('./getPangolinV2DualApys');
 import { getSynapseApys } from './getSynapseApys';
 const getGrapeApys = require('./getGrapeApys');
 
+const getIceCreamApys = require('./getIceCreamApys');
+const getSundaeApys = require('./getSundaeApys');
+
 const getSpellApys = require('./getSpellApys');
 import { getMaiApys } from './getMaiApys';
 import getMaiCurveApys from './getMaiCurveApys';
 import { getPangolinV2Apys } from './getPangolinV2Apys';
 
 const getApys = [
-  getPangolinV2Apys,
+  getIceCreamApys,
+  getSundaeApys,
+  /*   getPangolinV2Apys,
   getPangolinV2DualApys,
   getLydLpApys,
   getPangolinPNGApy,
@@ -42,7 +47,7 @@ const getApys = [
   getSpellApys,
   getMaiApys,
   getMaiCurveApys,
-  getGrapeApys,
+  getGrapeApys, */
 ];
 
 const getAvaxApys = async () => {

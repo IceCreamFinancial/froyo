@@ -6,6 +6,12 @@ import { fetchMooPrices } from '../../utils/fetchMooPrices';
 import { fetchXPrices } from '../../utils/fetchXPrices';
 import { fetchCoinGeckoPrices } from '../../utils/fetchCoinGeckoPrices';
 
+import magikPools from '../../data/fantom/magikLpPools.json';
+import chickenPools from '../../data/fantom/ChickenLpPools.json';
+import magikSinglePools from '../../data/fantom/magikPools.json';
+import sundaePools from '../../data/avax/sundaeLpPools.json';
+import icecreamPools from '../../data/avax/icecreamLpPools.json';
+
 import getNonAmmPrices from './getNonAmmPrices';
 import bakeryPools from '../../data/bakeryLpPools.json';
 import blizzardLpPools from '../../data/degens/blizzardLpPools.json';
@@ -96,9 +102,6 @@ import waultPools from '../../data/waultLpPools.json';
 import tenfiPools from '../../data/tenfiLpPools.json';
 import burgerPools from '../../data/burgerLpPools.json';
 import tombPools from '../../data/fantom/tombLpPools.json';
-import magikPools from '../../data/fantom/magikLpPools.json';
-import chickenPools from '../../data/fantom/ChickenLpPools.json';
-import magikSinglePools from '../../data/fantom/magikPools.json';
 import spiritPools from '../../data/fantom/spiritPools.json';
 import wexPolyPools from '../../data/matic/wexPolyLpPools.json';
 import icarusV2Pools from '../../data/icarusV2LpPools.json';
@@ -217,6 +220,8 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // FIXME: if this list grows too big we might hit the ratelimit on initialization everytime
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
+  ...sundaePools,
+  ...icecreamPools,
   ...beamswapPools,
   ...ripaePools,
   ...creditumPools,
@@ -327,8 +332,8 @@ const pools = [
   ...spiritPools,
   ...wexPolyPools,
   ...tombPools,
-  ...magikPools,
-  ...chickenPools,
+  /*   ...magikPools,
+  ...chickenPools, */
   // ...magikSinglePools,
   ...burgerPools,
   ...waultPools,
