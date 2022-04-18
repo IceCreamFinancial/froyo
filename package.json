@@ -1,7 +1,6 @@
 {
-  "name": "beefy-api",
+  "name": "froyop-api",
   "version": "1.0.3",
-  "repository": "beefyfinance/beefy-api",
   "license": "MIT",
   "scripts": {
     "install-all": "yarn && cd packages/address-book && yarn",
@@ -58,7 +57,7 @@
     "koa-etag": "^4.0.0",
     "koa-helmet": "^5.2.0",
     "koa-router": "^9.4.0",
-    "magikfarm-addressbook": "^1.0.1",
+    "froyop-addressbook": "^1.0.1",
     "node-fetch": "^2.6.1",
     "ts-node": "^10.0.0",
     "typescript": "^4.3.2",

@@ -1,5 +1,5 @@
 {
-  "name": "magikfarm-addressbook",
+  "name": "froyop-addressbook",
   "version": "1.0.3",
   "description": "A collection of useful addresses on various chains for defi development",
   "main": "build/address-book/index.js",
