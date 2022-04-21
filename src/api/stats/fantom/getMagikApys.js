@@ -34,10 +34,10 @@ const getPoolApy = async (rewardPool, pool) => {
     getTotalLpStakedInUsd(rewardPool, pool, pool.chainId),
   ]);
 
-  console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd);
+/*   console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd);
   console.log('totalStakedInUsd:', totalStakedInUsd);
 
-  console.log('APY:', yearlyRewardsInUsd.dividedBy(totalStakedInUsd).toNumber());
+  console.log('APY:', yearlyRewardsInUsd.dividedBy(totalStakedInUsd).toNumber()); */
 
   return yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
 };
@@ -66,8 +66,8 @@ const getYearlyRewardsInUsd = async (rewardPool, poolId) => {
   const price = await fetchPrice({ oracle: oracle, id: oracleId });
   const yearlyRewardsInUsd = yearlyRewards.times(price).dividedBy(DECIMALS);
 
-  console.log('$MSHARE PRICE:', price);
-  console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd);
+/*   console.log('$MSHARE PRICE:', price);
+  console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd); */
 
   return yearlyRewardsInUsd;
 };

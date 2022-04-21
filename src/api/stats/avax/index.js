@@ -46,8 +46,8 @@ const getApys = [
   getSynapseApys,
   getSpellApys,
   getMaiApys,
-  getMaiCurveApys,
-  getGrapeApys, */
+  getMaiCurveApys, */
+  getGrapeApys, 
 ];
 
 const getAvaxApys = async () => {

@@ -26,7 +26,7 @@ const getChickenSingleApys = async () => {
     apys = { ...apys, ...item };
   }
 
-  console.log('SINGLE APYS:', apys);
+/*   console.log('SINGLE APYS:', apys); */
 
   return apys;
 };

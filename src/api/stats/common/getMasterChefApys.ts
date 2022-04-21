@@ -84,7 +84,6 @@ const getFarmApys = async (params: MasterChefApysParams): Promise<BigNumber[]> =
   const tokenPrice = await fetchPrice({ oracle: params.oracle, id: params.oracleId });
   const { multiplier, blockRewards, totalAllocPoint } = await getMasterChefData(params);
   const { balances, allocPoints } = await getPoolsData(params);
-
   const secondsPerBlock = params.secondsPerBlock ?? (await getBlockTime(params.chainId));
   if (params.log) {
     console.log(
@@ -95,7 +94,7 @@ const getFarmApys = async (params: MasterChefApysParams): Promise<BigNumber[]> =
       totalAllocPoint.toNumber()
     );
   }
-
+  console.log('TokenPrice AVAX', tokenPrice);
   for (let i = 0; i < params.pools.length; i++) {
     const pool = params.pools[i];
 
@@ -129,7 +128,7 @@ const getFarmApys = async (params: MasterChefApysParams): Promise<BigNumber[]> =
       );
     }
   }
-
+  console.log('APY AVAX',apys);
   return apys;
 };
 

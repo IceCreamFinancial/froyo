@@ -34,11 +34,11 @@ const getCreditumApys = require('./getCreditumApys');
 const getRipaeApys = require('./getRipaeApys');
 
 const getApys = [
-  getTombApys,
+/*   getTombApys,
   getMagikApys,
   getMagikSingleApys,
   getChickenApys,
-  getChickenSingleApys,
+  getChickenSingleApys, */
   // getSushiLpApys,
   // getSpookyLpApys,
   // getFroyoLpApys,
