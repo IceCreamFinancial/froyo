@@ -1703,18 +1703,6 @@ const _tokens = {
     logoURI:
       'https://pancakeswap.finance/images/tokens/0x7f70642d88cf1c4a3a7abb072b53b929b653eda5.png',
   },
-  CREAM: {
-    name: 'Cream',
-    symbol: 'CREAM',
-    address: '0xd4CB328A82bDf5f03eB737f37Fa6B370aef3e888',
-    chainId: 56,
-    decimals: 18,
-    website: 'https://cream.finance/',
-    description:
-      'C.R.E.A.M Finance is a decentralized peer-to-peer (P2P) DeFi platform that provides lending, borrowing, swap, payment and tokenization services for digital assets.',
-    logoURI:
-      'https://pancakeswap.finance/images/tokens/0xd4cb328a82bdf5f03eb737f37fa6b370aef3e888.png',
-  },
   PROM: {
     name: 'Prometeus',
     symbol: 'PROM',
