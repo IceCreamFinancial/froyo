@@ -1,7 +1,7 @@
 import getBeltPrices from './bsc/belt/getBeltPrices';
 import getEllipsisPrices from './bsc/ellipsis/getEllipsisPrices';
 import getSnob3PoolPrice from './avax/getSnob3PoolPrice';
-//import getFroyoPrices from './fantom/getFroyoPrices';
+import getFroyoPrices from './fantom/getFroyoPrices';
 import getGondolaPrices from './avax/getGondolaPrices';
 import getCurvePolygonPrices from './matic/getCurvePrices';
 import getCurveFantomPrices from './fantom/getCurvePrices';
@@ -11,9 +11,9 @@ import getAlpacaIbPrices from './bsc/alpaca/getAlpacaIbPrices';
 import getCurveArbitrumPrices from './arbitrum/getCurvePrices';
 import getCurveAvaxPrices from './avax/getCurvePrices';
 import getCurveHarmonyPrices from './one/getCurvePrices';
-//import getBeethovenxPrices from './fantom/getBeethovenxPrices';
+import getBeethovenxPrices from './fantom/getBeethovenxPrices';
 import { getSynapsePrices } from './avax/getSynapsePrices';
-//import getJarvisPrices from './matic/getJarvisPrices';
+import getJarvisPrices from './matic/getJarvisPrices';
 
 const getNonAmmPrices = async tokenPrices => {
   let prices = {};
@@ -23,7 +23,7 @@ const getNonAmmPrices = async tokenPrices => {
     getBeltPrices(tokenPrices),
     getEllipsisPrices(),
     getSnob3PoolPrice(),
-   // getFroyoPrices(),
+    getFroyoPrices(),
     getGondolaPrices(tokenPrices),
     getCurvePolygonPrices(tokenPrices),
     getCurveFantomPrices(tokenPrices),
@@ -34,7 +34,7 @@ const getNonAmmPrices = async tokenPrices => {
     getIronSwapPrices(),
     getAlpacaIbPrices(tokenPrices),
     getSynapsePrices(),
-  //  getJarvisPrices(tokenPrices),
+    getJarvisPrices(tokenPrices),
   ];
 
   // Setup error logs
