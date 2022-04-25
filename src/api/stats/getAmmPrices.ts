@@ -1,7 +1,7 @@
 `use strict`;
 
 import { fetchAmmPrices } from '../../utils/fetchAmmPrices';
-import { fetchDmmPrices } from '../../utils/fetchDmmPrices';
+ import { fetchDmmPrices } from '../../utils/fetchDmmPrices';
 import { fetchMooPrices } from '../../utils/fetchMooPrices';
 import { fetchXPrices } from '../../utils/fetchXPrices';  
 import { fetchCoinGeckoPrices } from '../../utils/fetchCoinGeckoPrices';
@@ -10,9 +10,9 @@ import magikPools from '../../data/fantom/magikLpPools.json';
 import chickenPools from '../../data/fantom/ChickenLpPools.json';
 import magikSinglePools from '../../data/fantom/magikPools.json';
 import sundaePools from '../../data/avax/sundaeLpPools.json';
-//import sundaeSinglePools from '../../data/avax/sundaePools.json';
+import sundaeSinglePools from '../../data/avax/sundaePools.json';
 import icecreamPools from '../../data/avax/icecreamLpPools.json';
-//import icecreamSinglePools from '../../data/avax/icecreamPools.json';
+import icecreamSinglePools from '../../data/avax/icecreamPools.json';
 
 import getNonAmmPrices from './getNonAmmPrices';
 import bakeryPools from '../../data/bakeryLpPools.json';
@@ -228,7 +228,7 @@ const pools = [
   ...icecreamPools,
   ...ripaePools,
   ...grapePools,
-   ...sushiFusePools,
+/*   ...sushiFusePools,
   ...sushiFtmPools,
   ...oxdaoPools,
   ...tethysPools,
@@ -422,7 +422,7 @@ const pools = [
   ...nyacashPools,
   ...thugsPools,
   ...cakeLpV1Pools,
-  ...cakeLpPools, 
+...cakeLpPools, */
 ];
 
 const dmmPools = [...kyberPools, ...oldDmmPools];
