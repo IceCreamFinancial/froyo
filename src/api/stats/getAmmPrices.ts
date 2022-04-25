@@ -3,16 +3,16 @@
 import { fetchAmmPrices } from '../../utils/fetchAmmPrices';
 import { fetchDmmPrices } from '../../utils/fetchDmmPrices';
 import { fetchMooPrices } from '../../utils/fetchMooPrices';
-import { fetchXPrices } from '../../utils/fetchXPrices';
+import { fetchXPrices } from '../../utils/fetchXPrices';  
 import { fetchCoinGeckoPrices } from '../../utils/fetchCoinGeckoPrices';
 
 import magikPools from '../../data/fantom/magikLpPools.json';
 import chickenPools from '../../data/fantom/ChickenLpPools.json';
 import magikSinglePools from '../../data/fantom/magikPools.json';
 import sundaePools from '../../data/avax/sundaeLpPools.json';
-//import sundaeSinglePools from '../../data/avax/sundaeSinglePools.json';
+//import sundaeSinglePools from '../../data/avax/sundaePools.json';
 import icecreamPools from '../../data/avax/icecreamLpPools.json';
-//import icecreamSinglePools from '../../data/avax/icecreamSinglePools.json';
+//import icecreamSinglePools from '../../data/avax/icecreamPools.json';
 
 import getNonAmmPrices from './getNonAmmPrices';
 import bakeryPools from '../../data/bakeryLpPools.json';
@@ -222,16 +222,13 @@ const REFRESH_INTERVAL = 5 * 60 * 1000;
 // FIXME: if this list grows too big we might hit the ratelimit on initialization everytime
 // Implement in case of emergency -> https://github.com/beefyfinance/beefy-api/issues/103
 const pools = [
-  //...sundaeSinglePools,
+/*   ...sundaeSinglePools,
+  ...icecreamSinglePools, */
   ...sundaePools,
-  //...icecreamSinglePools,
   ...icecreamPools,
-  ...beamswapPools,
   ...ripaePools,
-  ...creditumPools,
-  ...trisolarisMiniPools,
   ...grapePools,
-  ...sushiFusePools,
+   ...sushiFusePools,
   ...sushiFtmPools,
   ...oxdaoPools,
   ...tethysPools,
@@ -336,8 +333,8 @@ const pools = [
   ...spiritPools,
   ...wexPolyPools,
   ...tombPools,
-  /*   ...magikPools,
-  ...chickenPools, */
+     ...magikPools,
+  ...chickenPools, 
   // ...magikSinglePools,
   ...burgerPools,
   ...waultPools,
@@ -425,7 +422,7 @@ const pools = [
   ...nyacashPools,
   ...thugsPools,
   ...cakeLpV1Pools,
-  ...cakeLpPools,
+  ...cakeLpPools, 
 ];
 
 const dmmPools = [...kyberPools, ...oldDmmPools];
@@ -459,34 +456,34 @@ const updateAmmPrices = async () => {
   try {
     const coinGeckoPrices = fetchCoinGeckoPrices(coinGeckoCoins);
     const ammPrices = fetchAmmPrices(pools, knownPrices);
-    const dmmPrices = fetchDmmPrices(dmmPools, knownPrices);
+      const dmmPrices = fetchDmmPrices(dmmPools, knownPrices);  
 
-    const xPrices = ammPrices.then(async pools => {
+      const xPrices = ammPrices.then(async pools => {
       return await fetchXPrices(pools.tokenPrices);
-    });
+    });  
 
-    const mooPrices = ammPrices.then(async ({ poolPrices, tokenPrices }) => {
+      const mooPrices = ammPrices.then(async ({ poolPrices, tokenPrices }) => {
       return await fetchMooPrices(mooTokens, tokenPrices, poolPrices);
-    });
+    });  
 
     const tokenPrices = ammPrices.then(async ({ _, tokenPrices }) => {
-      const dmm = await dmmPrices;
+        const dmm = await dmmPrices;
       const xTokenPrices = await xPrices;
-      const mooTokenPrices = await mooPrices;
+      const mooTokenPrices = await mooPrices;  
 
       return {
         ...tokenPrices,
-        ...dmm.tokenPrices,
+          ...dmm.tokenPrices,
         ...mooTokenPrices,
-        ...xTokenPrices,
+        ...xTokenPrices,  
         ...(await coinGeckoPrices),
       };
     });
 
     const lpPrices = ammPrices.then(async ({ poolPrices, _ }) => {
-      const dmm = await dmmPrices;
+        const dmm = await dmmPrices; 
       const nonAmmPrices = await getNonAmmPrices(await tokenPrices);
-      return { ...poolPrices, ...dmm.poolPrices, ...nonAmmPrices };
+       return { ...poolPrices, ...dmm.poolPrices, ...nonAmmPrices };
     });
 
     await tokenPrices;

@@ -1,4 +1,4 @@
-const getLydLpApys = require('./getLydLpApys');
+/* const getLydLpApys = require('./getLydLpApys');
 const getOliveApys = require('./getOliveApys');
 const getAvaxBifiGovApy = require('./getAvaxBifiGovApy');
 const { getAvaxBifiMaxiApy } = require('./getAvaxBifiMaxiApy');
@@ -13,16 +13,16 @@ const getBlizzLpApys = require('./getBlizzLpApys');
 const getBlizzLendingApys = require('./getBlizzLendingApys');
 const getBankerJoeApys = require('./getBankerJoeApys');
 const getPangolinV2DualApys = require('./getPangolinV2DualApys');
-import { getSynapseApys } from './getSynapseApys';
+import { getSynapseApys } from './getSynapseApys'; */
 const getGrapeApys = require('./getGrapeApys');
 
 const getIceCreamApys = require('./getIceCreamApys');
 const getSundaeApys = require('./getSundaeApys');
 
-const getSpellApys = require('./getSpellApys');
+/* const getSpellApys = require('./getSpellApys');
 import { getMaiApys } from './getMaiApys';
 import getMaiCurveApys from './getMaiCurveApys';
-import { getPangolinV2Apys } from './getPangolinV2Apys';
+import { getPangolinV2Apys } from './getPangolinV2Apys'; */
 
 const getApys = [
   getIceCreamApys,
