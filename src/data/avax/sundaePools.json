@@ -1,0 +1,11 @@
+[
+{
+    "name": "sundae-fudge",
+    "token": "0xD9FF12172803c072a36785DeFea1Aa981A6A0C18",
+    "decimals": "1e18",
+    "poolId": 3,
+    "oracle": "tokens",
+    "oracleId": "FUDGE"
+  }
+]
+
