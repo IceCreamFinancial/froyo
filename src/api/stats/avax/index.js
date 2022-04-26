@@ -18,13 +18,16 @@ const getGrapeApys = require('./getGrapeApys');
 
 const getIceCreamApys = require('./getIceCreamApys');
 const getSundaeApys = require('./getSundaeApys');
-
+const getCreamApy = require('./getCreamSingleApy');
+const getFudgeApy = require('./getFudgeSingleApy');
 /* const getSpellApys = require('./getSpellApys');
 import { getMaiApys } from './getMaiApys';
 import getMaiCurveApys from './getMaiCurveApys';
 import { getPangolinV2Apys } from './getPangolinV2Apys'; */
 
 const getApys = [
+  getCreamApy,
+  getFudgeApy,
   getIceCreamApys,
   getSundaeApys,
   /*   getPangolinV2Apys,
