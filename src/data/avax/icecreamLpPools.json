@@ -5,13 +5,13 @@
     "decimals": "1e18",
     "poolId": 0,
     "chainId": 43114,
-    "lp1": {
+    "lp0": {
       "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       "oracle": "tokens",
-      "oracleId": "WAVAX",
+      "oracleId": "AVAX",
       "decimals": "1e18"
     },
-    "lp0": {
+    "lp1": {
       "address": "0xAE21d31a6494829a9E4B2B291F4984AAE8121757",
       "oracle": "tokens",
       "oracleId": "CREAM",
@@ -24,13 +24,13 @@
     "decimals": "1e18",
     "poolId": 1,
     "chainId": 43114,
-    "lp1": {
+    "lp0": {
       "address": "0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7",
       "oracle": "tokens",
-      "oracleId": "WAVAX",
+      "oracleId": "AVAX",
       "decimals": "1e18"
     },
-    "lp0": {
+    "lp1": {
       "address": "0x155f794b56353533E0AfBF76e1B1FC57DFAd5Bd7",
       "oracle": "tokens",
       "oracleId": "CSHARE",
