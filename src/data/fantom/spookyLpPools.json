@@ -817,25 +817,6 @@
     }
   },
   {
-    "name": "boo-cream-ftm",
-    "address": "0xb77b223490e1f5951ec79A8d09Db9Eab2ADCB934",
-    "decimals": "1e18",
-    "poolId": 13,
-    "chainId": 250,
-    "lp0": {
-      "address": "0x21be370D5312f44cB42ce377BC9b8a0cEF1A4C83",
-      "oracle": "tokens",
-      "oracleId": "WFTM",
-      "decimals": "1e18"
-    },
-    "lp1": {
-      "address": "0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6",
-      "oracle": "tokens",
-      "oracleId": "CREAM",
-      "decimals": "1e18"
-    }
-  },
-  {
     "name": "boo-snx-ftm",
     "address": "0x06d173628bE105fE81F1C82c9979bA79eBCAfCB7",
     "decimals": "1e18",
