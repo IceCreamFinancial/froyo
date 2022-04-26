@@ -799,17 +799,6 @@ const _tokens = {
     symbol: 'WETH',
   },
   ETH: ETH,
-  CREAM: {
-    name: 'Cream',
-    address: '0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6',
-    symbol: 'CREAM',
-    decimals: 18,
-    chainId: 250,
-    website: 'https://app.cream.finance/',
-    description:
-      'C.R.E.A.M. Finance is a decentralized lending protocol for individuals, institutions and protocols to access financial services.',
-    logoURI: 'https://ftmscan.com/token/images/CreamFinance_32.png',
-  },
   sUSD: {
     name: 'Synth sUSD',
     address: '0x0E1694483eBB3b74d3054E383840C6cf011e518e',
