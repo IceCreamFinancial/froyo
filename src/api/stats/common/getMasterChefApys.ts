@@ -94,7 +94,7 @@ const getFarmApys = async (params: MasterChefApysParams): Promise<BigNumber[]> =
       totalAllocPoint.toNumber()
     );
   }
-  console.log('TokenPrice AVAX', tokenPrice);
+  //console.log('TokenPrice AVAX', tokenPrice);
   for (let i = 0; i < params.pools.length; i++) {
     const pool = params.pools[i];
 
@@ -128,7 +128,7 @@ const getFarmApys = async (params: MasterChefApysParams): Promise<BigNumber[]> =
       );
     }
   }
-  console.log('APY AVAX',apys);
+ // console.log('APY AVAX',apys);
   return apys;
 };
 

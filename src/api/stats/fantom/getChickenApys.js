@@ -34,10 +34,10 @@ const getPoolApy = async (rewardPool, pool) => {
     getTotalLpStakedInUsd(rewardPool, pool, pool.chainId),
   ]);
 
-  console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd);
-  console.log('totalStakedInUsd:', totalStakedInUsd);
+ // console.log('yearlyRewardsInUsd:', yearlyRewardsInUsd);
+ // console.log('totalStakedInUsd:', totalStakedInUsd);
 
-  console.log('APY:', yearlyRewardsInUsd.dividedBy(totalStakedInUsd).toNumber());
+//  console.log('APY:', yearlyRewardsInUsd.dividedBy(totalStakedInUsd).toNumber());
 
   return yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
 };

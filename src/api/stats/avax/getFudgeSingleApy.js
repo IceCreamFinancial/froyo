@@ -27,7 +27,7 @@ const getFudgeSingleApy = async () => {
     apys = { ...apys, ...item };
   }
 
-   console.log('SINGLE APYS:', apys); 
+  // console.log('SINGLE APYS:', apys); 
 
   return apys;
 };
@@ -46,7 +46,7 @@ const getPoolApy = async (masterchef, pool) => {
   ]);
   const simpleApy = yearlyRewardsInUsd.dividedBy(totalStakedInUsd);
   const apy = compound(simpleApy, process.env.BASE_HPY, 1, 0.955);
-   console.log(pool.name, simpleApy.valueOf(), apy, totalStakedInUsd.valueOf(), yearlyRewardsInUsd.valueOf());
+  // console.log(pool.name, simpleApy.valueOf(), apy, totalStakedInUsd.valueOf(), yearlyRewardsInUsd.valueOf());
   return { [pool.name]: apy };
 };
 
